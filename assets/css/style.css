@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../images/background.png");
+}
+
+h1 {
+    padding: 10px;
+    background-color: #3FBF3F;
+    color: #fff;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+#rules {
+    padding: 10px;
+    background-color: #fff;
+    color: #3FBF3F;
+    width: 400px;
+    margin: 25px 0px;
+}
+#randomNumber {
+    float: left;
+    background-color: #3FBF3F;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+}
+#winsLossesBox {
+    float: left;
+    background-color: #3FBF3F;
+    color: #fff;
+    padding: 10px;
+}
+
+#crystalLocation {
+    clear: both;
+}
