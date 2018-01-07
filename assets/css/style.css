@@ -3,36 +3,44 @@ body {
     background-image: url("../images/background.png");
 }
 
-h1 {
-    padding: 10px;
-    background-color: #3FBF3F;
-    color: #fff;
-    width: 250px;
-    margin: auto;
-    text-align: center;
+.jumbotron {
+    background-color: #005ce6;
+    padding: 15px;
 }
 
-#rules {
-    padding: 10px;
-    background-color: #fff;
-    color: #3FBF3F;
-    width: 400px;
-    margin: 25px 0px;
+h1 {
+    text-align: center;
+    font-weight: bolder;
+} 
+
+.panel {
+    font-weight: bold;
+    font-size: 18px;
 }
-#randomNumber {
-    float: left;
-    background-color: #3FBF3F;
+#randomNumberBox {
+    
+    background-color: #005ce6;
     color: #fff;
-    padding: 10px;
-    margin-right: 10px;
+    padding: 30px;
 }
 #winsLossesBox {
-    float: left;
-    background-color: #3FBF3F;
+   
+    background-color: #005ce6;
+    color: #fff;
+    padding: 10px;
+   
+}
+
+.totalScoreArea {
+    background-color: #005ce6;
     color: #fff;
     padding: 10px;
 }
 
-#crystalLocation {
-    clear: both;
+
+
+
+.crystal-image {
+    width:200px;
+    padding: 10px;
 }
