@@ -31,12 +31,26 @@ function crystalProduction() {
     }
 }
 
+//function to reset crystals
+function resetCrystals () {
+    $("#crystalLocation").empty();
+    for(var i = 0; i<imageArray.length; i++){
+        var imageCrystal = $("<img>");
+        imageCrystal.addClass("crystal-image");
+        imageCrystal.attr("src", imageArray[i]);
+        imageCrystal.attr("data-crystalvalue", randomIntfromInterval(1,12));
+        $("#crystalLocation").append(imageCrystal);
+        
+    }
+}
+
 //function to produce random score to achieve
 function scoreNeededForWin(){
     targetScore = randomIntfromInterval(19,120)
     $("#randomNumber").text(targetScore);
 }
 
+//function for gameplay
 function gameplay (){
     
     $(".crystal-image").click(function(){  
@@ -68,6 +82,7 @@ function initializeGame() {
 
 function continueGame () {
     scoreNeededForWin();
+    resetCrystals();
     totalScore=0;
     $("#totalScore").text(totalScore);
     gameplay ();
